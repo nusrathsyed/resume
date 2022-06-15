@@ -108,7 +108,7 @@
 %-------------------------------------------------------------------------------
 %% Page Layout
 % Configure page margins with geometry
-\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
+\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=1.5cm, footskip=.5cm}
 
 %% Header & Footer
 % Set offset to each header and offset
@@ -509,21 +509,21 @@
 % Define a section for CV
 % Usage: \cvsection{<section-title>}
 \newcommand{\cvsection}[1]{
-  \par\addvspace{1.5ex}
+  \par\addvspace{0.2ex}
   \phantomsection{}
   \sectionstyle{#1}
   \color{gray}\vhrulefill{0.9pt}
-  \par\nobreak\addvspace{1ex}
+  \par\nobreak\addvspace{0.2ex}
 }
 
 % Define a section for Volunteer experience specifically
 % Usage: \cvsect{<section-title>}
 \newcommand{\cvsect}[1]{
-  \par\addvspace{3.5ex}
+  \par\addvspace{1.0ex}
   \phantomsection{}
   \sectionstyle{#1}
   \color{gray}\vhrulefill{0.9pt}
-  \par\nobreak\addvspace{1ex}
+  \par\nobreak\addvspace{0.5ex}
 }
 
 % Define a subsection for CV
@@ -536,7 +536,7 @@
 % Define a paragraph for CV
 \newenvironment{cvparagraph}{%
   \vspace{\acvSectionContentTopSkip}
-  \vspace{-3mm}
+  \vspace{-2mm}
   \paragraphstyle
 }{%
   \par
@@ -623,7 +623,7 @@
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{
-  \vspace{-4mm}
+  \vspace{-3mm}
   \begin{justify}
   \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
     \setlength{\parskip}{0pt}
